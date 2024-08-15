@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>the Fastlanes</title>
+    <link rel="stylesheet" href="style_Fastlanes V.1.0.1.css">
+
+</head>
+<body>
+    <!-- โลโก้ -->
+    <div class="logo">
+        <div class="container">
+            <div class="background-logo"></div>
+            <div class="logo">
+                <img src="โลโก้ Fastlanes.jpg" alt="">
+            </div>
+        </div>
+    </div>
+
+    <!-- แถบเมนู บนสุด -->
+    <div class="header">
+        <div class="container">
+            <div class="header-con">
+                <div class="haeder-logo">
+                </div>
+                <div class="menu">
+                    <li><a href=""><b>หน้าหลัก</b></a></li>
+                    <li><a href=""><b>ผลิตภัณฑ์</b></a></li>
+                    <li><a href=""><b>ลูกค้าของเรา</b></a></li>
+                    <li><a href=""><b>เกี่ยวกับเรา</b></a></li>
+                    <li><a href=""><b>ติดต่อเรา</b></a></li>
+                </div>
+                <div class="language">
+                    <li><a href=""><b>ภาษาไทย</b></a></li>
+                    <li><a href=""><b>ภาษาอังกฤษ</b></a></li>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Slider รูปภาพ -->
+    <div class="content-top">
+        <section class="section">
+            <div class="slider">
+
+                <!-- รูปภาพ Slider Auto -->
+                <div class="slide">
+                    <input type="radio" name="radio-btn" id="radio1">
+                    <input type="radio" name="radio-btn" id="radio2">
+                    <input type="radio" name="radio-btn" id="radio3">   
+
+                    <div class="st first">
+                        <img src="40 ปี ประสบการณ์.png" alt="">
+                    </div>
+                    <div class="st">
+                        <img src="2000คัน.png" alt="">
+                    </div>
+                    <div class="st">
+                        <img src="15 ปี ประสบการณ์ระบบงาน.png" alt="">   
+                    </div>
+
+                    <div class="nav-auto">
+                        <div class="a-b1"></div>
+                        <div class="a-b2"></div>
+                        <div class="a-b3"></div>
+                    </div>
+                </div>  
+                
+                <!-- ปุ่มเลือกภาพ -->
+                <div class="nav-m">
+                    <label for="radio1" class="m-btn"></label>
+                    <label for="radio2" class="m-btn"></label>
+                    <label for="radio3" class="m-btn"></label>
+                </div>
+            </div>
+        </section>
+
+        <!-- เงื่อนไข Slider -->
+        <script type="text/javascript">
+            var counter=1;
+            setInterval(function(){
+                document.getElementById('radio' + counter).checked=true;
+                counter++;
+                if(counter > 3){
+                    counter = 1;
+                }
+            },10000);
+        </script>
+    </div>    
+
+
+
+
+</body>
+</html>
